@@ -37,7 +37,7 @@ app.post('/submit-form', (req, res) => {
         //send email with defined transport object
         const info = await transporter.sendMail({
             from: ' "IT Support" <info@inthesun.xyz>', //sender email address
-            to: "alilasteve@gmail.com , wairitk@gmail.com", //list of receivers
+            to: "alilasteve@gmail.com", //list of receivers
             subject: "Contact Form Submission",
             html: "<p>Greetings! The website contact survey is well received "+ "<br>Name "+`${name}<hr>`+"<br>Email "+`${email}<hr>`+"<br>Phone "+`${phone}`+"<br>Message "+`${message}`+"<p>"
         });
